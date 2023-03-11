@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15217E4E673F1AF3B873464A /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F95D01B310FE37C8B57BCD9 /* Pods_Demo.framework */; };
 		48D7935129BC6A0800A81C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D7935029BC6A0800A81C2B /* AppDelegate.swift */; };
 		48D7935329BC6A0800A81C2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D7935229BC6A0800A81C2B /* SceneDelegate.swift */; };
 		48D7935529BC6A0800A81C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D7935429BC6A0800A81C2B /* ViewController.swift */; };
 		48D7935829BC6A0800A81C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D7935629BC6A0800A81C2B /* Main.storyboard */; };
 		48D7935A29BC6A0800A81C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D7935929BC6A0800A81C2B /* Assets.xcassets */; };
 		48D7935D29BC6A0800A81C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D7935B29BC6A0800A81C2B /* LaunchScreen.storyboard */; };
+		48D7936529BC6BE500A81C2B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D7936429BC6BE500A81C2B /* TableViewCell.swift */; };
+		48D7936729BC73EC00A81C2B /* Layout-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D7936629BC73EC00A81C2B /* Layout-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		48D7935929BC6A0800A81C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48D7935C29BC6A0800A81C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48D7935E29BC6A0800A81C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48D7936429BC6BE500A81C2B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		48D7936629BC73EC00A81C2B /* Layout-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Layout-Extension.swift"; sourceTree = "<group>"; };
+		6F95D01B310FE37C8B57BCD9 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54E6BD50B11AD8202BD2FFE /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		FD715EDC558BA233F942AC4B /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15217E4E673F1AF3B873464A /* Pods_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				48D7934F29BC6A0800A81C2B /* Demo */,
 				48D7934E29BC6A0800A81C2B /* Products */,
+				55C1D6D16E754E5E5EAA7ADA /* Pods */,
+				F90F8670F3FBBDB0E11498ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				48D7935029BC6A0800A81C2B /* AppDelegate.swift */,
 				48D7935229BC6A0800A81C2B /* SceneDelegate.swift */,
 				48D7935429BC6A0800A81C2B /* ViewController.swift */,
+				48D7936429BC6BE500A81C2B /* TableViewCell.swift */,
 				48D7935629BC6A0800A81C2B /* Main.storyboard */,
 				48D7935929BC6A0800A81C2B /* Assets.xcassets */,
 				48D7935B29BC6A0800A81C2B /* LaunchScreen.storyboard */,
 				48D7935E29BC6A0800A81C2B /* Info.plist */,
+				48D7936629BC73EC00A81C2B /* Layout-Extension.swift */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		55C1D6D16E754E5E5EAA7ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E54E6BD50B11AD8202BD2FFE /* Pods-Demo.debug.xcconfig */,
+				FD715EDC558BA233F942AC4B /* Pods-Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F90F8670F3FBBDB0E11498ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F95D01B310FE37C8B57BCD9 /* Pods_Demo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48D7936129BC6A0800A81C2B /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
+				5445BB3D7F2CD2C7C5717548 /* [CP] Check Pods Manifest.lock */,
 				48D7934929BC6A0800A81C2B /* Sources */,
 				48D7934A29BC6A0800A81C2B /* Frameworks */,
 				48D7934B29BC6A0800A81C2B /* Resources */,
+				19F33E66898286261877C279 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +165,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19F33E66898286261877C279 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo/Pods-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5445BB3D7F2CD2C7C5717548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48D7934929BC6A0800A81C2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D7936729BC73EC00A81C2B /* Layout-Extension.swift in Sources */,
 				48D7935529BC6A0800A81C2B /* ViewController.swift in Sources */,
+				48D7936529BC6BE500A81C2B /* TableViewCell.swift in Sources */,
 				48D7935129BC6A0800A81C2B /* AppDelegate.swift in Sources */,
 				48D7935329BC6A0800A81C2B /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +358,7 @@
 		};
 		48D7936229BC6A0800A81C2B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E54E6BD50B11AD8202BD2FFE /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +387,7 @@
 		};
 		48D7936329BC6A0800A81C2B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD715EDC558BA233F942AC4B /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
